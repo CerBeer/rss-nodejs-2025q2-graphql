@@ -20,7 +20,15 @@ export const PostCreateType = new GraphQLInputObjectType({
   },
 });
 
-type Post = {
+export const PostChangeType = new GraphQLInputObjectType({
+  name: 'ChangePostInput',
+  fields: {
+    title: { type: GraphQLString },
+    content: { type: GraphQLString},
+  },
+});
+
+export type Post = {
   title: string,
   content: string,
   authorId: string,
@@ -29,3 +37,5 @@ type Post = {
 export type PostQuery = { id: string } & Post;
 
 export type PostCreate = { dto: Post };
+
+export type PostChange = { dto: Post };
