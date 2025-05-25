@@ -58,7 +58,6 @@ export const UserType = new GraphQLObjectType<UserQuery, Context>({
         });
       },
     },
-
   }),
 });
 
@@ -88,3 +87,8 @@ export type UserQuery = { id: string } & User;
 export type UserCreate = { dto: User }
 
 export type UserChange = { dto: User }
+
+export type Subscribe = {
+  userId: string,
+  authorId: string,
+}
