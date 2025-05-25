@@ -1,4 +1,5 @@
-import { GraphQLObjectType, GraphQLEnumType, GraphQLInt, GraphQLFloat, GraphQLInputObjectType  } from "graphql";
+import { GraphQLObjectType, GraphQLEnumType, GraphQLInt, GraphQLFloat, GraphQLInputObjectType, GraphQLBoolean  } from "graphql";
+import { UUIDType } from "./uuid.js";
 
 export const MemberTypeId = new GraphQLEnumType({
   name: 'MemberTypeId',

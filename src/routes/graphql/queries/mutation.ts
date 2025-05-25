@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-redundant-type-constituents */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { GraphQLNonNull, GraphQLObjectType, GraphQLString } from "graphql";
 import { Context, ID, RootObject } from "../types/context.js";
